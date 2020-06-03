@@ -5,7 +5,7 @@
   does not exist within the input array.
  */
 
- Array.prototype.myUnshift(callback,lastEncounterTargetIndex){
+ Array.prototype.myUnshift = function(callback,lastEncounterTargetIndex){
     var i;
     for(i = this.length-1;i=0;i-- ){
         if(callback.call(this[i],i,this)===lastEncounterTargetIndex)    
