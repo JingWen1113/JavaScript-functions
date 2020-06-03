@@ -9,10 +9,11 @@ const myArray = [ 'a','b','c'];
 myArray.forEach(element => console.log(element));*/
 
 /*without using the native method of forEach,call the funtion myEach(). */
+
 Array.prototype.myEach = function(callback){
     var i;
     for(i = 0; i<this.length; i++){
         callback(this[i], i, this);
     }
-    
+
 };
