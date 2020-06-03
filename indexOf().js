@@ -5,7 +5,7 @@ array of elements and returns the index of the first encounter of a
  within the input array.
  */
 
- Array.prototype.myIndexOf(callback, targetElement){
+ Array.prototype.myIndexOf=function(callback, targetElement){
     
     var i;
     for(i =0; i<this.length; i++){
