@@ -9,7 +9,7 @@ array of elements and returns the index of the first encounter of a
     
     var i;
     for(i =0; i<this.length; i++){
-        if( callback.call(targetElement,this[i],i,this)){
+        if( callback.call(this[i],i,this)===targetElement){
             
             return i;
         }   
